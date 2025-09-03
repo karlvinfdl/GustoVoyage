@@ -1,9 +1,17 @@
 
 
 
-.h1 .span {
-    left: 50%;
+section h1 {
+    margin-top: auto;
+    text-align: center;
+}
+
+
+span {
+    border-radius: 100px;
     background-color: gold;
+    padding: 11px;
+    
 }
 
 
@@ -14,13 +22,14 @@ img {
  vertical-align: middle;
 }
 
-.wrapper {
+.wrapper4 {
     padding: 0 10px;
-    
+    display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 1rem;  
-    background-color: rgb(237, 224, 205);   
+
+    background-color: rgb(235, 241, 245);
 }
 
 .intro{
@@ -70,7 +79,7 @@ padding: 10px;
 display: none;
 position: absolute;
 background-color: white;
-min-width: 80px;
+min-width: 70px;
 box-shadow: 2px 2px 5px black;
 }
 
@@ -86,7 +95,7 @@ box-shadow: 2px 2px 5px black;
 display: none;
 position: absolute;
 background-color: white;
-min-width: 150px;
+min-width: 50px;
 box-shadow: 2px 2px 5px black;
 }
 
@@ -102,7 +111,7 @@ box-shadow: 2px 2px 5px black;
 display: none;
 position: absolute;
 background-color: white;
-min-width: 1px;
+min-width: 125px;
 box-shadow: 2px 2px 5px black;
 }
 
@@ -110,46 +119,16 @@ box-shadow: 2px 2px 5px black;
     display: block;
   }
 
+/* ===========================================================================================================
+    CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES
+   ===========================================================================================================*/
 
-  .product-card {
-    max-width: 12em;
-    background-color: aliceblue;
-    padding: 1em;
-    box-shadow: 0 5px 5px;
-  }
+   
 
-  .product-card img {
-    max-width: 100%;
-  }
+  /*========================================================================================= 
+   RESPONSIVE CARTES       RESPONSIVE CARTES       RESPONSIVE CARTES     RESPONSIVE CARTES  
+ ===========================================================================================*/
 
-  .product-card h4 {
-    font-size: 1.3em;
-    margin: 0.5em 0;
-  }
-
-  .product-card div {
-    font-size: 1.2em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-
-  .product-card button {
-    background-color: black;
-    color: white;
-    border: none;
-  }
-
-  .product-card:hover {
-    background-color: crimson;
-    color: white;
-  }
-
-  .product-card:hover button {
-    color: black;
-    background-color: white;
-  }
 
   @media screen and (max-width: 576px) {
 .product-card {
@@ -157,3 +136,70 @@ box-shadow: 2px 2px 5px black;
 }
     
   }
+
+
+  /* ========================================================== */
+
+  .slider-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1em;
+}
+
+.product-slider {
+  display: flex;
+  gap: 1em;
+}
+
+.product-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto; /* empêche la carte de s'étirer */
+  width: 200px;   /* ajuste selon ton design */
+  background-color: aliceblue;
+  padding: 1em;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+
+.product-card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-card button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 1em;
+}
+
+.product-card:hover {
+  background-color: crimson;
+  color: white;
+}
+
+.product-card:hover button {
+  color: black;
+  background-color: white;
+}
+
+/* Optional scrollbar hidden (Webkit only) */
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
