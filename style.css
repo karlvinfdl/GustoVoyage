@@ -1,6 +1,15 @@
 
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 
 
+/* ====================
+TITRE ATELIERS CUISINE
+========================*/
 section h1 {
     margin-top: auto;
     text-align: center;
@@ -13,24 +22,112 @@ span {
     padding: 11px;
     
 }
+ 
 
 
-img {
- width: 100%;
- max-width: 100px;
- object-fit: cover;
- vertical-align: middle;
+
+/* ================================================================================================
+ CARTES DES CHEFS    CARTES DES CHEFS   CARTES DES CHEFS    CARTES DES CHEFS    CARTES DES CHEFS
+====================================================================================================*/
+
+.container4 {
+    width: 100vw;
+    height: 35vh;
+    display: grid;
+    place-items: center;
+    background-color: #fffbef;
 }
 
-.wrapper4 {
-    padding: 0 10px;
+.review_list {
+    display: flex;
+    list-style: none;
+}
+
+.review_item:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.review_item {
+    width: 300px;
+    margin: 0% 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: inset 2px 2px 1px white, 4px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+.review_img {
+    height: 44px;
+    width: 44px;
+    float: left;
+    border-radius: 6px;
+    margin-right: 1rem;
+    margin-bottom: .4rem;
+    box-shadow: inset 4px 4px 4px rgba(255, 37, 37, 0.89);
+    overflow: hidden;
+}
+
+.review_img img {
+ width: 115%;
+margin: auto;
+ border-radius: 10px;
+}
+
+.review_item h2 {
+    line-height: 100%;
+    margin-top: 4px;
+    color: black;
+    font-size: 16px;
+}
+
+
+.review_item span>p {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.review_item span {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 1rem;  
-
-    background-color: rgb(235, 241, 245);
+    width: fit-content;
 }
+
+/* à rajouter */
+.review_item span .star {
+    align-self: flex-end;
+    font-style: normal;
+    height: 16px;
+    width: 16px;
+    clip-path: polygon();
+    background-color: rgba(54, 54, 54);
+}
+
+.review_item span .star::before {
+    content: "";
+    height: 100%;
+    width: 92%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: gold;
+}
+
+
+.review_item span.span3 .star::before {
+    width: 90%;
+}
+
+
+
+.review_item p {
+    color: rgba(99,99, 99);
+    padding-top: 10px;
+    font-size: 12px;
+
+}
+
 
 .intro{
 flex: 1;
@@ -119,32 +216,17 @@ box-shadow: 2px 2px 5px black;
     display: block;
   }
 
+
 /* ===========================================================================================================
     CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES
    ===========================================================================================================*/
-
-   
-
-  /*========================================================================================= 
-   RESPONSIVE CARTES       RESPONSIVE CARTES       RESPONSIVE CARTES     RESPONSIVE CARTES  
- ===========================================================================================*/
-
-
-  @media screen and (max-width: 576px) {
-.product-card {
-    font-size: 0.9em;
-}
-    
-  }
-
-
-  /* ========================================================== */
-
   .slider-container {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   padding: 1em;
+  display: flex;
+  justify-content: center;
 }
 
 .product-slider {
@@ -203,3 +285,15 @@ box-shadow: 2px 2px 5px black;
 .slider-container::-webkit-scrollbar {
   display: none;
 }
+
+  /*========================================================================================= 
+   RESPONSIVE CARTES       RESPONSIVE CARTES       RESPONSIVE CARTES     RESPONSIVE CARTES  
+ ===========================================================================================*/
+
+
+  @media screen and (max-width: 576px) {
+.product-card {
+    font-size: 0.9em;
+}
+    
+  }
