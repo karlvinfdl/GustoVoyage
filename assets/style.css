@@ -2,14 +2,14 @@
 
 /* =======================================================
           🌟   Styles généraux   🌟
-  ------------------------------------------------------- */
-*{
+======================================================= */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: #ffffff;
     overflow-x: hidden;
 }
@@ -18,38 +18,34 @@ body{
     width: 1000px;
     max-width: 95%;
     height: 600px;
-    margin: 50px auto; /* centre et ajoute de l'espace */
+    margin: 50px auto;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
-    position: relative; /* pour gérer le contenu interne */
+    position: relative;
 }
 
-
-
 /* =======================================================
-          🌟   Styles généraux   🌟
-  ------------------------------------------------------- */
-
-/* =======================================================
-          🌟 ici c'est le header du site  🌟
-------------------------------------------------------- */
- 
+          🌟 Header du site 🌟
+======================================================= */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
 }
+
 .logo img {
-   height: 70px;
-   width: auto;
-   display: block;
+    height: 70px;
+    width: auto;
+    display: block;
 }
+
 nav a {
     margin: 0 30px;
     text-decoration: none;
     color: #333;
 }
+
 .btn-contact {
     padding: 8px 15px;
     background-color: #d2a517;
@@ -59,293 +55,754 @@ nav a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
 }
-/* =======================================================
-          🌟 ici c'est le header du site  🌟
-  ------------------------------------------------------- */
 
 /* =======================================================
-          🌟   Image et bannière   🌟
-  ------------------------------------------------------- */
+          🌟 Image et bannière 🌟
+======================================================= */
 .images__destinations {
-      background: url("../assets/images/66d1abefcda0c2001ca0ba11.webp") center/cover no-repeat;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      opacity: 0.8;
+    background: url("../assets/images/66d1abefcda0c2001ca0ba11.jpg") center/cover no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.8;
 }
 
 .images__destinations h1 {
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 2rem;
-      color: #000;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 2rem;
+    color: #000;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
 }
-/* =======================================================
-          🌟   Image et bannière   🌟
-  ------------------------------------------------------- */
 
 /* =======================================================
-          🌟   Voyages selon vos envies   🌟
-  ------------------------------------------------------- */
+          🌟 Voyages selon vos envies 🌟
+======================================================= */
 .carousel-container__destinations {
-  position: relative;
-  overflow: hidden;
-  
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel-section__destinations {
-  padding: 40px 10%;
+    padding: 40px 10%;
 }
 
 .carousel-section__destinations h2 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #d2a517;
+    position: relative;
+    display: inline-block;
+    color: #383d59;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
+.carousel-section__destinations h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: #d2a517;
+    border-radius: 2px;
+}
+
+/* Carousel */
 .carousel__destinations {
-  display: flex;
-  gap: 15px;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  /* a supprimer couleur */
+    display: flex;
+    gap: 15px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .carousel-item__destinations {
-  min-width: 200px;
-  height: 150px;
-  border-radius: 10px;
-  position: relative;
-  color: white;
-  display: flex;
-  align-items: flex-end;
-  padding: 10px;
-  font-weight: bold;
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
+    min-width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
 }
 
 /* Flèches */
 .slider-arrow1__destinations {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  color: #d2a517;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #d2a517;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-arrow1__destinations.left__destinations {
-  left: 10px;
+    left: 10px;
 }
 
 .slider-arrow1__destinations.right__destinations {
-  right: 10px;
+    right: 10px;
 }
-/* =======================================================
-          🌟   Voyages selon vos envies   🌟
-  ------------------------------------------------------- */
-
 
 /* =======================================================
-          🌟   Nos voyages incontournables   🌟
-  ------------------------------------------------------- */
+          🌟 Nos voyages incontournables 🌟
+======================================================= */
 .slider-container__destinations {
-  position: relative;
-  width: 100%;
-  padding: 20px;
-  background: #eaeeff;
-  border-radius: 20px;
-  box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: #eaeeff;
+    border-radius: 20px;
+    box-sizing: border-box;
 }
 
 .incontournables-section__destinations {
-  padding: 40px 10%;
+    padding: 40px 10%;
 }
+
 .incontournables-section__destinations h2 {
-  color: #d2a517;
-  font-size: 1.8rem; 
-  margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    color: #383d59;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.incontournables-section__destinations h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: #d2a517;
+    border-radius: 2px;
 }
 
 .cards__destinations {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding: 20px 0;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 20px 0;
 }
 
 .cards__destinations::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .card__destinations {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  flex: 0 0 320px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 320px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card__destinations:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .card__destinations img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 .card-content__destinations {
-  padding: 15px;
+    padding: 15px;
 }
 
 .card-content__destinations h3 {
-  margin: 0 0 10px;
-  font-size: 1.2rem;
-  color: #333;
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #383d59;
 }
 
 .card-content__destinations p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-  color: #666;
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #383d59;
+    font-family: open sans, sans-serif;
 }
 
 /* Flèches */
 .slider-arrow__destinations {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  color: #d2a517;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0;
-  z-index: 10;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #d2a517;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-arrow__destinations.left__destinations {
-  left: 10px;
+    left: 15px;
 }
 
 .slider-arrow__destinations.right__destinations {
-  right: 10px;
+    right: 10px;
 }
-/* =======================================================
-          🌟   Nos voyages incontournables   🌟
-  ------------------------------------------------------- */
-
-  /* =======================================================
-          🌟   Carte interactive   🌟
-  ------------------------------------------------------- */ 
-  
-/* =======================================================
-          🌟   Carte interactive   🌟
-  ------------------------------------------------------- */
-
 
 /* =======================================================
-          🌟   description   🌟
-  ------------------------------------------------------- */
-.japon-section__destinations {
-  padding: 50px 10%;
-  background: #fff;
+          🌟 Carte interactive 🌟
+======================================================= */
+.carte__destinations {
+     padding: 40px 10%; /* même que .incontournables-section__destinations */
 }
 
-.japon-section__destinations h2 {
-  
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #d2a517;
+
+.carte__titre__destinations {
+    position: relative;
+    display: inline-block;
+    color: #383d59;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-left: 20px; /* rectangle à gauche */
+}
+.carte__titre__destinations::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: #d2a517;
+    border-radius: 2px;
 }
 
-.japon-container__destinations {
-  display: flex;
-  gap: 30px;
-  align-items: flex-start;
-  max-width: 1000px;
-  margin: auto;
+
+
+.carte__svg__destinations {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 25px;
+    display: block;
+    margin: 0 auto;
 }
 
-.japon-image__destinations img {
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  border: 3px solid #d2a517;
+/* Couleurs par défaut et hover */
+.carte__destinations path {
+    fill: #b8b8b8;
+    stroke: #cdcdcd;
+    stroke-width: 0.5;
+    cursor: pointer;
 }
 
-.japon-content__destinations {
-  flex: 1;
+.carte__destinations path.active {
+    fill: #383d59;
 }
 
-.japon-content__destinations h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
+.carte__destinations path:hover {
+    opacity: 0.8;
 }
 
-.japon-content__destinations h2 span {
-  font-weight: bold;
+/* Pays proposés */
+.carte__destinations path[data-name="France"],
+.carte__destinations path[data-name="Italy"],
+.carte__destinations path[data-name="Morocco"],
+.carte__destinations path[data-name="South Africa"],
+.carte__destinations path[data-name="United States of America"],
+.carte__destinations path[data-name="Peru"],
+.carte__destinations path[data-name="Japan"],
+.carte__destinations path[data-name="Australia"],
+.carte__destinations path[data-name="New Zealand"],
+.carte__destinations path[data-name="Thailand"] {
+    fill: #d2a517;
 }
 
-.japon-content__destinations h3 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #d2a517;
-}
-
-.japon-content__destinations ul {
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-.japon-content__destinations li {
-  margin-bottom: 10px;
-}
-
-.japon-highlight__destinations {
-  margin-top: 15px;
-  padding: 12px 18px;
-  background: #f9f9f9;
-  border-left: 4px solid orange;
-  border-radius: 6px;
-  font-size: 14px;
-}
 /* =======================================================
-          🌟   description   🌟
-  ------------------------------------------------------- */
+          🌟 Description Section 🌟
+======================================================= */
+.destination-section {
+    padding: 50px 10%;
+    background: #fff;
+}
 
-/* Responsive */
-@media (max-width: 600px) {
+.destination-section h2,
+.destination-content h2 {
+    position: relative;
+    display: inline-block;
+    color: #383d59;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.destination-section h2::before,
+.destination-content h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 100%;
+    background-color: #d2a517;
+    border-radius: 2px;
+}
+
+.destination-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.destination-image img {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 3px solid #d2a517;
+}
+
+.destination-content {
+    flex: 1;
+}
+
+.destination-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #d2a517;
+}
+
+.destination-content ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.destination-content li {
+    margin-bottom: 10px;
+}
+
+.destination-highlight {
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #f9f9f9;
+    border-left: 4px solid orange;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* =======================================================
+          🌟 Modal 🌟
+======================================================= */
+.modal__destinations {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,.6);
+}
+
+.modal-content__destinations {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    color: #383d59;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+}
+
+.close__destinations {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #383d59;
+}
+
+.close__destinations:hover {
+    color: #000;
+}
+
+/* =======================================================
+          🌟 Footer 🌟
+======================================================= */
+footer {
+    background: linear-gradient(to right, #f1c40f, #d35400);
+    color: white;
+    padding: 30px 60px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* =======================================================
+          🌟 Responsive 🌟
+======================================================= */
+
+/* =======================================================
+          🌟 Responsive complet 🌟
+======================================================= */
+
+/* === Tablette (768px à 1024px) === */
+@media screen and (max-width: 1024px) {
+
+  /* Image destination */
+  .images__destinations {
+      height: 250px;
+  }
+  .images__destinations h1 {
+      font-size: 1.8rem;
+      padding: 12px 20px;
+      text-align: center;
+  }
+
+  /* Voyages selon vos envies */
+  .carousel-section__destinations {
+      padding: 30px 5%;
+  }
+  .carousel-section__destinations h2 {
+      font-size: 1.5rem;
+      text-align: left;
+      padding-left: 20px; /* rectangle */
+      position: relative;
+  }
+  .carousel-section__destinations h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .carousel__destinations {
+      gap: 15px;
+      overflow-x: auto;
+  }
+  .carousel-item__destinations {
+      min-width: 220px;
+      height: 150px;
+  }
+
+  /* Nos voyages incontournables */
+  .incontournables-section__destinations {
+      padding: 30px 5%;
+  }
+  .incontournables-section__destinations h2 {
+      font-size: 1.5rem;
+      text-align: left;
+      padding-left: 20px; /* rectangle */
+      position: relative;
+  }
+  .incontournables-section__destinations h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .cards__destinations {
+      gap: 15px;
+      padding: 15px 0;
+  }
+
+  /* Carte interactive */
+  .carte__destinations {
+      padding: 30px 5%;
+  }
+  .carte__titre__destinations {
+      font-size: 1.5rem;
+      text-align: left;
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.3;
+  }
+  .carte__titre__destinations::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .carte__svg__destinations {
+      width: 90%;
+      max-width: 700px;
+      display: block;
+      margin: 0 auto;
+  }
+
+  /* Description section */
+  .destination-container {
+      flex-direction: row;
+      gap: 20px;
+  }
+  .destination-image img {
+      width: 250px;
+      max-width: 250px;
+  }
+  .destination-content h2 {
+      font-size: 1.5rem;
+      padding-left: 20px;
+      position: relative;
+  }
+  .destination-content h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .destination-content h3 {
+      font-size: 16px;
+  }
+  .destination-content li {
+      font-size: 14px;
+  }
+  .destination-highlight {
+      font-size: 13px;
+  }
+}
+
+/* === Mobile (jusqu'à 414px) === */
+@media screen and (max-width: 414px) {
+
+  /* Image destination */
+  .images__destinations {
+      height: 200px;
+      padding: 0 10px;
+  }
+  .images__destinations h1 {
+      font-size: 1.7rem;
+      padding: 10px 15px;
+      line-height: 1.3;
+  }
+
+  /* Voyages selon vos envies */
+  .carousel-section__destinations {
+      padding: 20px 10px;
+  }
+  .carousel-section__destinations h2 {
+      font-size: 1.4rem;
+      text-align: left;
+      padding-left: 15px; /* rectangle */
+      line-height: 1.3;
+      position: relative;
+  }
+  .carousel-section__destinations h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .carousel__destinations {
+      gap: 12px;
+      overflow-x: auto;
+  }
+  .carousel-item__destinations {
+      min-width: 280px;
+      height: 150px;
+  }
+
+  /* Nos voyages incontournables */
+  .incontournables-section__destinations {
+      padding: 20px 10px;
+  }
+  .incontournables-section__destinations h2 {
+      font-size: 1.4rem;
+      text-align: left;
+      padding-left: 15px; /* rectangle */
+      position: relative;
+  }
+  .incontournables-section__destinations h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .cards__destinations {
+      gap: 15px;
+      overflow-x: auto;
+      padding: 0 5px;
+  }
   .card__destinations {
-    flex: 0 0 90%;
-    max-width: 90%;
+      flex: 0 0 320px;
+      max-width: 320px;
+  }
+  .card__destinations img {
+      width: 100%;
+      height: 220px;
   }
 
-  .card__destinations img {
-    height: 200px;
+  /* Carte interactive */
+  .carte__destinations {
+      padding: 20px 10%;
+  }
+  .carte__titre__destinations {
+      font-size: 1.3rem;
+      text-align: left;
+      padding-left: 15px; /* rectangle */
+      line-height: 1.3;
+      position: relative;
+  }
+  .carte__titre__destinations::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .carte__svg__destinations {
+      width: 100%;
+      max-width: 100%;
+  }
+
+  /* Description section */
+  .destination-container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 10px;
+      overflow: hidden;
+  }
+  .destination-image img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      margin: 0 auto;
+  }
+  .destination-content {
+      width: 100%;
+      max-width: 100%;
+      text-align: left;
+      padding: 0 8px;
+      line-height: 1.3;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+  }
+  .destination-section h2,
+  .destination-content h2 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      padding-left: 15px; /* rectangle */
+      position: relative;
+  }
+  .destination-section h2::before,
+  .destination-content h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 100%;
+      background-color: #d2a517;
+      border-radius: 2px;
+  }
+  .destination-content h3 {
+      font-size: 0.85rem;
+      margin-top: 8px;
+      margin-bottom: 6px;
+  }
+  .destination-content p,
+  .destination-content li {
+      font-size: 0.8rem;
+      line-height: 1.3;
+  }
+  .destination-content ul {
+      margin-left: 12px;
+  }
+  .destination-highlight {
+      font-size: 0.75rem;
+      padding: 5px 8px;
+      margin-top: 6px;
   }
 }
+
