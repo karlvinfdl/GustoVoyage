@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.scss">
     <script src="https://unpkg.com/topojson@3"></script>
+    <link rel="shortcut icon" href="../assets/images/logoarrondi.webp">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -13,7 +14,9 @@
 <!-- Header Axel -->
      <header>
         <div class="logo">
-            <img src="assets/images/logoarrondi.webp"alt="Logo GustoVoyage"> 
+
+            <img src="../assets/images/logoarrondi.webp" alt="Logo GustoVoyage"> 
+
         </div>
         <nav>
             <a href="#">Accueil</a>
@@ -23,7 +26,14 @@
             <a href="#">Galerie photo</a>
         </nav>
         <a href="#" class="btn-contact">Contact</a>
+
+        <div class="burger" id="burger">
+      ☰
+    </div>
      </header>
+
+    
+
 <!-- Header Axel -->
 
 <!-- Images et bannières -->
@@ -41,15 +51,15 @@
         <!-- Flèche gauche -->
         <button class="slider-arrow1__destinations left__destinations">&#10094;</button>
         <div class="carousel__destinations" id="carousel">
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/paris.avif')">FRANCE</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/usa.avif')">ETATS-UNIS</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/perou.avif')">PEROU</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/maroc.avif')">MAROC</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/afrique.avif')">AFRIQUE DU SUD</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/thailand.avif')">THAILANDE</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/australie.avif')">AUSTRALIE</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/jap.avif')">JAPON</div>
-            <div class="carousel-item__destinations" style="background-image:url('assets/images/italie.avif')">ITALIE</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/paris.avif')">FRANCE</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/usa.avif')">ETATS-UNIS</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/perou.avif')">PEROU</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/maroc.avif')">MAROC</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/afrique.avif')">AFRIQUE DU SUD</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/thailand.avif')">THAILANDE</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/australie.avif')">AUSTRALIE</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/jap.avif')">JAPON</div>
+            <div class="carousel-item__destinations" style="background-image:url('../assets/images/italie.avif')">ITALIE</div>
         </div>
         <!-- Flèche droite -->
         <button class="slider-arrow1__destinations right__destinations">&#10095;</button>
@@ -70,9 +80,9 @@
     <div class="cards__destinations">
       <!-- Carte 1 -->
       <div class="card__destinations" 
-           data-modal-img="assets/images/océanie.webp"
+           data-modal-img="../assets/images/océanie.webp"
            data-modal-description="Délices d'Asie & Océanie : découvrez les saveurs uniques de ces régions.">
-        <img src="assets/images/asie.avif" alt="Délices d'Asie & Océanie">
+        <img src="../assets/images/asie.avif" alt="Délices d'Asie & Océanie">
         <div class="card-content__destinations">
           <h3 class="card-title__destinations">Délices d'Asie & Océanie</h3>
           <p>Durée : 15-18 jours</p>
@@ -83,9 +93,9 @@
 
       <!-- Carte 2 -->
       <div class="card__destinations" 
-           data-modal-img="assets/images/méditerranée.webp" 
+           data-modal-img="../assets/images/méditerranée.webp" 
            data-modal-description="Méditerranée & Afrique Gourmandes : un voyage au cœur des saveurs méditerranéennes.">
-        <img src="assets/images/afrique.avif" alt="Méditerranée & Afrique Gourmandes ">
+        <img src="../assets/images/afrique.avif" alt="Méditerranée & Afrique Gourmandes ">
         <div class="card-content__destinations">
           <h3 class="card-title__destinations">Méditerranée & Afrique Gourmandes </h3>
           <p>Durée : 12 jours</p>
@@ -96,9 +106,9 @@
 
       <!-- Carte 3 -->
       <div class="card__destinations" 
-           data-modal-img="assets/images/atlantique.webp" 
+           data-modal-img="../assets/images/atlantique.webp" 
            data-modal-description=">Saveurs de l’Atlantique : un périple culinaire entre France, États-Unis et Pérou.">
-        <img src="assets/images/atlantique2.avif" alt="Saveurs de l’Atlantique">
+        <img src="../assets/images/atlantique2.avif" alt="Saveurs de l’Atlantique">
         <div class="card-content__destinations">
           <h3 class="card-title__destinations">Saveurs de l’Atlantique</h3>
           <p>Durée : ≈ 14 jours</p>
@@ -109,9 +119,9 @@
 
       <!-- Carte 4 -->
       <div class="card__destinations" 
-           data-modal-img="assets/images/tour.webp" 
+           data-modal-img="../assets/images/tour.webp" 
            data-modal-description="Tour du monde complet : 10 pays, 60 à 75 jours d'aventures et de gastronomie.">
-        <img src="assets/images/monde.avif" alt="Tour du monde">
+        <img src="../assets/images/monde.avif" alt="Tour du monde">
         <div class="card-content__destinations">
           <h3 class="card-title__destinations">Tour du monde</h3>
           <p>Durée : 60–75 jours (5–7 jours par pays)</p>
@@ -143,7 +153,7 @@
 <section class="country-section" id="France" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/paris.avif" alt="France">
+      <img src="../assets/images/paris.avif" alt="France">
     </div>
     <div class="destination-content">
       <h2>France – <span>Entre terroir et haute gastronomie</span></h2>
@@ -167,7 +177,7 @@ La France est le paradis des gourmets. De la finesse des mets étoilés aux prod
 <section class="country-section" id="Italy" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/italie.avif" alt="Italie">
+      <img src="../assets/images/italie.avif" alt="Italie">
     </div>
     <div class="destination-content">
       <h2>Italy – <span>Saveurs méditerranéennes et traditions ancestrales</span></h2>
@@ -191,7 +201,7 @@ L’Italie est un hymne aux saveurs simples et authentiques, où chaque plat rac
 <section class="country-section" id="Morocco" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/maroc.avif" alt="Maroc">
+      <img src="../assets/images/maroc.avif" alt="Maroc">
     </div>
     <div class="destination-content">
       <h2>Moroc – <span>Épices et traditions du Maghreb</span></h2>
@@ -215,7 +225,7 @@ Le Maroc est un festival de saveurs, entre épices, marchés colorés et recette
 <section class="country-section" id="South Africa" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/afrique.avif" alt="Afrique du Sud">
+      <img src="../assets/images/afrique.avif" alt="Afrique du Sud">
     </div>
     <div class="destination-content">
       <h2>South Africa – <span>Du braai aux saveurs locales</span></h2>
@@ -239,7 +249,7 @@ L’Afrique du Sud offre une cuisine variée, mêlant influences africaines, eur
 <section class="country-section" id="United States of America" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/usa.avif" alt="États-Unis">
+      <img src="../assets/images/usa.avif" alt="États-Unis">
     </div>
     <div class="destination-content">
       <h2>United States of America – <span>Entre street food et gastronomie innovante</span></h2>
@@ -263,7 +273,7 @@ Les États-Unis surprennent par leur variété culinaire, des classiques améric
 <section class="country-section" id="Peru" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/perou.avif" alt="Pérou">
+      <img src="../assets/images/perou.avif" alt="Pérou">
     </div>
     <div class="destination-content">
       <h2>Peru – <span>Saveurs andines et traditions culinaires</span></h2>
@@ -287,7 +297,7 @@ Le Pérou est une terre de gastronomie riche, entre produits locaux, superalimen
 <section class="country-section" id="Japan">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/jap.jpg" alt="Japan">
+      <img src="../assets/images/jap.jpg" alt="Japan">
     </div>
     <div class="destination-content">
       <h2>Japon – <span>Entre traditions et modernité culinaire</span></h2>
@@ -314,7 +324,7 @@ Le Pérou est une terre de gastronomie riche, entre produits locaux, superalimen
 <section class="country-section" id="Australia" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/australie.avif" alt="Australie">
+      <img src="../assets/images/australie.avif" alt="Australie">
     </div>
     <div class="destination-content">
       <h2>Australia – <span>Du bush tucker aux saveurs côtières</span></h2>
@@ -338,7 +348,7 @@ L’Australie offre une cuisine qui mêle traditions aborigènes et influences i
 <section class="country-section" id="New Zealand" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/newzeland.avif" alt="Nouvelle-Zélande">
+      <img src="../assets/images/newzeland.avif" alt="Nouvelle-Zélande">
     </div>
     <div class="destination-content">
       <h2>New Zealand – <span>Entre mer et terres fertiles</span></h2>
@@ -362,7 +372,7 @@ La Nouvelle-Zélande est un paradis pour les gourmets, avec des produits locaux 
 <section class="country-section" id="Thailand" style="display:none;">
   <div class="destination-container">
     <div class="destination-image">
-      <img src="assets/images/thailand.avif" alt="Thaïlande">
+      <img src="../assets/images/thailand.avif" alt="Thaïlande">
     </div>
     <div class="destination-content">
       <h2>Thailand – <span>Épices, marchés et saveurs exotiques</span></h2>
@@ -387,26 +397,39 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
 <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
-  <script src="assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
 
 <!-- Footer Axel -->
-    <footer>
-    <div class="footer-nav">
-      <div>
-        <a href="#">Accueil</a>
-        <a href="#">Destination</a>
-        <a href="#">Offres spéciales</a>
-        <a href="#">Ateliers cuisine</a>
-        <a href="#">Galerie photo</a>
-      </div>
-      <div>
-        <input type="text" placeholder="search...">
-      </div>
+  <footer>
+  <div class="footer-nav">
+    <!-- Liens -->
+    <div class="footer-links">
+      <a href="#">Accueil</a>
+      <a href="#">Destination</a>
+      <a href="#">Offres spéciales</a>
+      <a href="#">Ateliers cuisine</a>
+      <a href="#">Galerie photo</a>
     </div>
-    <div class="footer-bottom">
-      <p>Privacy Policy | Terms of Use | Sales and Refunds | Legal</p>
+
+    <!-- Recherche -->
+    <div class="footer-search">
+      <input type="text" placeholder="search...">
+      <button>🔍</button>
     </div>
-  </footer>
+
+    <!-- Réseaux sociaux -->
+    <div class="footer-socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fas fa-paper-plane"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Privacy Policy | Terms of Use | Sales and Refunds | Legal</p>
+  </div>
+</footer>
 <!-- Footer Axel -->
 
 
