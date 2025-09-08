@@ -32,7 +32,7 @@ nav a {
 
 .btn-contact {
   padding: 8px 15px;
-  background: #d4a017;
+  background: #FFC529;;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
@@ -212,7 +212,7 @@ margin: auto;
     position: absolute;
     top: 0%;
     left: 0%;
-    background-color: gold;
+    background-color: #FFC529;
 }
 
 
@@ -366,13 +366,62 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   background-color: #fff8e7;
 }
 
+
+/* =================================================
+  SECTION GAUCHE DE LA PAGE
+===================================================*/
+
 .left-section img {
-  width: 300px;
+  width: 500px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.5s ease;
+}
+
+.left-section img:hover {
+    transform: scale(1.1);
 }
 
 
+
+.info-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  margin-bottom: 1px;
+  line-height: 40px;
+  text-align: justify;
+
+}
+
+.info-text {
+  flex: 1;
+}
+
+
+.chef-img {
+ max-width: 41px;
+  top: 15px;
+  margin-left: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.flag {
+  font-size: 1.2em;
+}
+
+/* ==================================================
+    SECTION DROITE DE LA PAGE 
+=====================================================*/
 
 .right-section {
   max-width: 600px;
@@ -381,7 +430,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 }
 
 .right-section h2 {
-  background-color: #f7b733;
+  background-color: #FFC529;
   padding: 10px;
   border-radius: 6px;
   margin-bottom: 15px;
@@ -391,7 +440,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 
 .right-section p {
   margin-bottom: 10px;
-  line-height: 1.6;
+  line-height: 2.5;
 }
 
 .right-section ul {
@@ -406,7 +455,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 
 .highlight {
   font-weight: bold;
-  color: #b22222;
+  color: #000000;
 }
 
 .note {
@@ -414,35 +463,42 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   margin-top: 10px;
 }
 
-.info-box {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 15px;
+
+/* ===================================================
+ LOCALISATION / ENREGISTREMENT / NOTIFICATIONS
+========================================================*/
+
+.event-details {
+  background-color: #FFC529;
+  border: 1px solid #e2c97b;
   border-radius: 8px;
   margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
 }
 
-.info-box p {
-  margin-bottom: 8px;
+.event-btn-group {
+  display: flex;
+  align-items: center;
 }
 
-.info-text {
-  flex: 1;
+.event-btn {
+  background-color: #FFC529;
+  color: rgb(4, 4, 4);
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.chef-img {
- max-width: 41px;
-  top: 15px;
-  margin-left: 250px;
-  
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+.event-btn:hover {
+  background-color: #383D59;
 }
-
-
-.flag {
-  font-size: 1.2em;
-}
-
-
