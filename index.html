@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GustoVoyage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GustoVoyage</title>
+  <link rel="stylesheet" href="./assets/style.scss">
+  <link rel="shortcut icon" href="/assets/img/logoarrondi.webp">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Bienvenue sur GustoVoyage</h1>
+<body class="index">
+<!-- Header -->
+<header>
+  <div class="logo">
+    <img src="/assets/img/logoarrondi.webp" alt="GustoVoyage">
+  </div>
+
+  <!-- menu desktop -->
+  <nav class="nav-desktop">
+    <a href="#">Accueil</a>
+    <a href="#">Destination</a>
+    <a href="#">Offres spéciales</a>
+    <a href="#">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
+
+  </nav>
+
+  <!-- bouton contact desktop -->
+  <a href="#" class="btn-contact">Contact</a>
+
+  <!-- menu burger (mobile) -->
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <!-- menu overlay (mobile) -->
+  <nav id="nav-menu">
+    <div class="close-btn" id="close-btn">✖</div>
+    <a href="#">Accueil</a>
+    <a href="#">Destination</a>
+    <a href="#">Offres spéciales</a>
+    <a href="#">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-left">
+      <img src="/assets/img/photoassemble.webp" alt="Voyage et plat">
+    </div>
+    <div class="hero-right">
+      <h1>GustoVoyage</h1>
+      <h2>Planifiez votre voyage !</h2>
+      <h3>Votre voyage idéal <br> commence ici ✈️</h3>
+      <p>Partez à la découverte du monde avec GustoVoyage, votre agence de voyages sur mesure.  
+        De la plage paradisiaque aux sommets enneigés, nous transformons vos rêves d’évasion en expériences inoubliables.  
+        Notre équipe passionnée s’occupe de chaque détail pour vous offrir des aventures mémorables aux quatre coins du monde.<br>
+        <br>
+      🌍 Explorez. ✈️ Voyagez. 🍽️ Mangez. 💛 Vivez !<br>
+      </p>
+      <a href="#" class="btn-offres">Nos Offres</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Ce que disent nos voyageurs :</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <img src="/assets/img/claire_moreau.webp" alt="Claire">
+        <p>"Une aventure culinaire incroyable au Pérou ! Entre le ceviche frais dégusté au bord de l’océan et les ateliers pour apprendre à cuisiner le lomo saltado, chaque jour était un festival de saveurs."</p>
+        <p><strong>Claire Moreau</strong> - Pérou 🇵🇪</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="/assets/img/alexis_boufon.webp" alt="Alexis">
+        <p>"Ce voyage au Japon a été une révélation. J’ai appris l’art du sushi auprès d’un maître à Tokyo et découvert les marchés traditionnels de Kyoto. Alliance parfaite entre culture et gastronomie !"</p>
+        <p><strong>Alexis Bouffon</strong> - Japon 🇯🇵</p>
+        <div class="stars">★★★★★</div>
+      </div>
+      <div class="testimonial">
+        <img src="/assets/img/karlvin_salo.webp" alt="Karlvin">
+        <p>"Un séjour inoubliable en Nouvelle-Zélande où j’ai pu goûter à une cuisine inventive et locale. Les visites de vignobles et les paysages spectaculaires rendaient l’expérience encore plus magique."</p>
+        <p><strong>Karlvin Salo</strong> - Nouvelle-Zélande 🇳🇿</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+  <div class="footer-nav">
+    <!-- Liens -->
+    <div class="footer-links">
+      <a href="#">Accueil</a>
+      <a href="#">Destination</a>
+      <a href="#">Offres spéciales</a>
+      <a href="#">Ateliers cuisine</a>
+      <a href="#">Galerie photo</a>
+    </div>
+
+    <!-- Recherche -->
+    <div class="footer-search">
+      <input type="text" placeholder="search...">
+      <button>🔍</button>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Privacy Policy | Terms of Use | Sales and Refunds | Legal</p>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  </script>
 </body>
 </html>
