@@ -1,14 +1,10 @@
 
-# Ignorer le dossier node_modules
+# Ignorer le dossier 
 node_modules/
-
-# Ignorer tous les fichiers JSON
+assets/images galerie/
+pages/galerie.html
+# Ignorer tous les fichiers 
 *.json
-=======
-# Ignorer le dossier des dépendances
-node_modules/
 
-# Ignorer les fichiers de config de dépendances
-package.json
-package-lock.json
+
 
