@@ -1,6 +1,14 @@
+
+# Ignorer le dossier node_modules
+node_modules/
+
+# Ignorer tous les fichiers JSON
+*.json
+=======
 # Ignorer le dossier des dépendances
 node_modules/
 
 # Ignorer les fichiers de config de dépendances
 package.json
 package-lock.json
+
