@@ -1,12 +1,3 @@
-
-.playfair-display-stylesheet {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-
 * {
     margin: 0%;
     padding: 0%;
@@ -46,13 +37,6 @@ nav a {
   border-radius: 4px;
   text-decoration: none;
 }
-
-.burger {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 
 
 
@@ -123,7 +107,7 @@ TITRE ATELIERS CUISINE
 section h1 {
     margin-top: auto;
     text-align: center;
-   font-family: "Playfair Display", serif;
+   font-family: "Playfair Display";
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -351,6 +335,17 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   display: none;
 }
 
+  /*========================================================================================= 
+   RESPONSIVE CARTES       RESPONSIVE CARTES       RESPONSIVE CARTES     RESPONSIVE CARTES  
+ ===========================================================================================*/
+
+
+  @media screen and (max-width: 576px) {
+.product-card {
+    font-size: 0.9em;
+}
+    
+  }
 
 
 
@@ -514,182 +509,3 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 .event-btn:hover {
   background-color: #383D59;
 }
-
-
-/* ==========================================================================================================================================
-   RESPONSIVE     RESPONSIVE     RESPONSIVE     RESPONSIVE     RESPONSIVE     RESPONSIVE    RESPOSNSIVE
-=============================================================================================================================================*/
-
-
-/* Responsive pour tablettes (max-width: 992px) */
-@media screen and (max-width: 992px) {
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 30px;
-  }
-
- nav {
-    display: none; /* caché par défaut*/
-    flex-direction: column;
-    background: #fff;
-    position: absolute;
-    top: 80px; /*sous le header*/
-    left: 0;
-    width: 100%;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    padding: 20px 0;
-  }
-
-
-
-  nav a {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
-  }
-
-  .btn-contact {
-    display: none; /*caché sur mobile*/
-  }
-
-
-  .options {
-    flex-direction: column;
-    gap: 20px;
-    padding-right: 0;
-    align-items: center;
-  }
-
-  .review_list {
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-  }
-
-  .container_product {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-  }
-
-  .left-section img {
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .chef-img {
-    margin-left: 0;
-    margin-top: 10px;
-  }
-
-  .right-section {
-    padding: 15px;
-  }
-
-  .footer-nav {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-/* Responsive pour mobiles (max-width: 768px) */
-@media screen and (max-width: 768px) {
-
-  header {
-    padding: 15px 20px;
-  }
-
-  .logo img {
-    height: 50px;
-  }
-
-  .container4 {
-    height: auto;
-    padding: 20px 10px;
-  }
-
-  .review_list {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .review_item {
-    width: 90%;
-  }
-
-  .options select {
-    width: 100%;
-  }
-
-  .product-slider {
-    gap: 1em;
-  }
-
-  .product-card {
-    width: 150px;
-    font-size: 0.9em;
-  }
-
-  .left-section img {
-    max-width: 100%;
-  }
-
-  .right-section {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .event-btn {
-    font-size: 0.8em;
-    padding: 8px;
-  }
-
-  .footer-search input {
-    width: 100px;
-  }
-}
-
-/* Responsive pour petits mobiles (max-width: 480px) */
-@media screen and (max-width: 480px) {
-
-  .product-card {
-    width: 120px;
-    font-size: 0.8em;
-  }
-
-  .right-section h2 {
-    font-size: 1em;
-  }
-
-  .right-section p,
-  .right-section ul {
-    font-size: 0.9em;
-  }
-
-  .footer-search input {
-    width: 80px;
-    padding: 5px;
-  }
-
-  .footer-search button {
-    padding: 4px;
-  }
-
-  .footer-bottom {
-    font-size: 11px;
-  }
-
-  .event-btn {
-    padding: 6px;
-    font-size: 0.75em;
-  }
-
-  .container_product {
-    padding: 10px;
-  }
-}
-
-
