@@ -1,6 +1,10 @@
+
 # Ignorer le dossier 
 node_modules/
 assets/images galerie/
 pages/galerie.html
 # Ignorer tous les fichiers 
 *.json
+
+
+
