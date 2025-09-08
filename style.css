@@ -116,7 +116,7 @@ section h1 {
 
 span {
     border-radius: 100px;
-    background-color: gold;
+    background-color: #FFC529;
     padding: 11px;
     
 }
@@ -127,6 +127,7 @@ span {
 /* ================================================================================================
  CARTES DES CHEFS    CARTES DES CHEFS   CARTES DES CHEFS    CARTES DES CHEFS    CARTES DES CHEFS
 ====================================================================================================*/
+
 
 .container4 {
     width: 100vw;
@@ -229,13 +230,10 @@ margin: auto;
 }
 
 
-.intro{
-flex: 1;
-}
+/*=================================================================================================
+Ceci sont les boutons de selections et le menu déroulant des 3 boutons respectifs
+===================================================================================================*/
 
-
-
-/*Ceci sont les boutons de selections et le menu déroulant des 3 boutons respectifs*/
 
 .options {
     display: flex;
@@ -350,275 +348,101 @@ flex: 1;
   
   ========================================================================================================================*/
 
-  
- 
-
-
-
-    
-/*Tout ce qui concernent les cartes*/
-
-
-/*texte en bas des cartes*/
-
-.description {
-
-    overflow: hidden;
-    color:#000000;
-    line-height: 1.6;
-    width: 100%;
-    text-align: justify;
-    background-color: transparent; 
-    backdrop-filter: blur(6px);    
-    opacity: 0;
-    transform: translateY(40px);
-    transition-delay: .1s;
-    transition: all .1s ease-in;
- 
-}
-
-
-/*Couleur contour box et tailles*/
-
-section {
-    display: flex;
-    justify-self: flex-end;
-}
-
-
-article {
-
-    padding: 30px;
-    border-bottom: #0d0d0d;
-        background-color: #fffbef;
-
-    border-color: black;
-    border-radius: 15px;
-    margin: 0px;
-    display: flex;
-    justify-self: flex-end;
-
-   
-
-}
-
-.container img {
-    box-shadow: #0d0d0d;
-    width: 30%;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-}
-
-/* Reset and base styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f4f1;
-    color: #333;
-    padding: 40px 20px;
-}
-
-/* Container */
-.product-container {
-    display: flex;
-    gap: 30px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #fffbef;
-    padding: 100px;
-    border-radius: 12px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Image */
-.image-section img {
-    max-width: 95%;
-    height: auto;
-    border-radius: 8px;
-     border-radius: 50%;
-}
-
-/* Details */
-.details-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 1.6;
-    
-}
-
-.details-section h1 {
-    font-size: 2rem;
-    color: #222;
-    display: flex;
-    align-items: baseline;
-    margin-top: 25px;
-    justify-content: center;
-    padding: auto;
-    background-color: gold;
-    border-radius: 15px;
-    border-width: 4rem;
-}
-
-.price {
-    font-size: 1.8rem;
-    color: #b12704;
-    margin-bottom: 20px;
-}
-
-.description p {
-    font-size: 1rem;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    padding: auto;
-    font-weight: bolder;
-    
-}
-
-
-/* Button */
-.add-to-cart {
-    padding: 15px;
-    background-color: #ff9900;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.add-to-cart:hover {
-    background-color: #e68900;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .product-container {
-        flex-direction: column;
-    }
-
-    .options {
-        flex-direction: column;
-    }
-
-    .options select {
-        width: 100%;
-    }
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.container {
-  padding: 30px;
-  padding-right: 95px;
-}
-
-.container44 {
-    margin-right: 30px;
-}
-
-.container44 img {
-    max-width: 15%;
-    display: flex;
-    flex-direction: row;
-
-}
-
-p {
-    margin-top: 15px;
-}
-
-.content-box {
+.container_product {
   display: flex;
-  gap: 30px;
-  padding: 24px;
-  background-color: #fff6e6;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  justify-content: center;
   align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  background-color: #fff8e7;
 }
 
-.image-section {
-  flex-shrink: 0;
-  width: 500px;
-  max-width: 700px;
+.left-section img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.image-section img {
-  width: 100%;
-  height: auto;
+
+
+.right-section {
+  max-width: 600px;
+  padding: 25px;
   border-radius: 12px;
-  
 }
 
-.text-section {
-  flex-grow: 1;
-  min-width: 0;
+.right-section h2 {
+  background-color: #f7b733;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  text-align: center;
 }
 
-.title {
-  background-color: #FFC529;
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 12px;
-  font-size: 20px;
+.right-section p {
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
-.ul4 {
-  margin-top: 15px;
+.right-section ul {
   padding-left: 20px;
-  margin-bottom: 65px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
+  margin-bottom: 15px;
+}
+
+.right-section ul li {
+  margin-bottom: 8px;
+  list-style: disc;
 }
 
 .highlight {
-  color: #000000;
   font-weight: bold;
+  color: #b22222;
 }
 
-.warning {
-  color: #040404;
-  font-weight: bold;
+.note {
+  font-style: italic;
+  margin-top: 10px;
 }
-
 
 .info-box {
-  margin-top: 20px;
-  background: white;
-  padding: 10px ;
-  border-left: 4px solid #fcbf49;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
   border-radius: 8px;
-  display: flex;
-  margin-bottom: 125px;
+  margin-top: 20px;
 }
 
-.info-box img {
-    max-width: 130px;
-    
-   
+.info-box p {
+  margin-bottom: 8px;
 }
+
+.info-text {
+  flex: 1;
+}
+
+.chef-img {
+ max-width: 41px;
+  top: 15px;
+  margin-left: 250px;
+  
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.flag {
+  font-size: 1.2em;
+}
+
+
