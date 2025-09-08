@@ -59,10 +59,11 @@ body {
 .offers {
   display: grid;
   grid-template-columns: 1fr 1fr; /* deux colonnes */
-  gap: 50px;
+  gap: 35px;
   max-width: 1000px;
   margin: 0px auto;
   padding: 3%;
+  row-gap: 50px;
 }
 
 .card__offers {
@@ -253,8 +254,8 @@ footer {
 /* Mobiles */
 @media (max-width: 768px) {
   .card__offers {
-    max-width: 95%;
-    padding: 12px;
+    max-width: 100%;
+    padding: 6px;
   }
 
   .card__offers img {
