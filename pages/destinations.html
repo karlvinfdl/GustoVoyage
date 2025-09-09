@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GustoVoyage</title>
-    <link rel="stylesheet" href="../assets/css/style.scss">
-    <script src="https://unpkg.com/topojson@3"></script>
-    <link rel="shortcut icon" href="../assets/images/logoarrondi.webp">
-
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
+</head >
+    <body class="body__destinations">
+<script src="assets/jj.js"></script>
 <!-- Header Axel -->
      <header>
-        <div class="logo">
+  <div class="logo">
+    <img src="/assets/img/logoarrondi.webp" alt="GustoVoyage">
+  </div>
 
-            <img src="../assets/images/logoarrondi.webp" alt="Logo GustoVoyage"> 
+  <!-- menu desktop -->
+  <nav class="nav-desktop">
+    <a href="#">Accueil</a>
+    <a href="#">Destination</a>
+    <a href="#">Offres spéciales</a>
+    <a href="#">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
 
-        </div>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Destination</a>
-            <a href="#">Offre spéciales</a>
-            <a href="#">Ateliers cuisines</a>
-            <a href="#">Galerie photo</a>
-        </nav>
-        <a href="#" class="btn-contact">Contact</a>
+  </nav>
 
-        <div class="burger" id="burger">
-      ☰
-    </div>
-     </header>
+  <!-- bouton contact desktop -->
+  <a href="#" class="btn-contact">Contact</a>
 
-    
+  <!-- menu burger (mobile) -->
+  <div class="hamburger" id="hamburger">☰</div>
 
+  <!-- menu overlay (mobile) -->
+  <nav id="nav-menu">
+    <div class="close-btn" id="close-btn">✖</div>
+    <a href="#">Accueil</a>
+    <a href="#">Destination</a>
+    <a href="#">Offres spéciales</a>
+    <a href="#">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 <!-- Header Axel -->
 
 <!-- Images et bannières -->
@@ -51,15 +60,15 @@
         <!-- Flèche gauche -->
         <button class="slider-arrow1__destinations left__destinations">&#10094;</button>
         <div class="carousel__destinations" id="carousel">
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/paris.avif')">FRANCE</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/usa.avif')">ETATS-UNIS</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/perou.avif')">PEROU</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/maroc.avif')">MAROC</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/afrique.avif')">AFRIQUE DU SUD</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/thailand.avif')">THAILANDE</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/australie.avif')">AUSTRALIE</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/jap.avif')">JAPON</div>
-            <div class="carousel-item__destinations" style="background-image:url('../assets/images/italie.avif')">ITALIE</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/jap_1.webp')">FRANCE</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/new.jpg')">ETATS-UNIS</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/new.jpg')">PEROU</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/jap.jpg')">MAROC</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/jap.jpg')">AFRIQUE DU SUD</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/jap_1.webp')">THAILANDE</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/new.jpg')">AUSTRALIE</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/new.jpg')">JAPON</div>
+            <div class="carousel-item__destinations" style="background-image:url('assets/images/new.jpg')">ITALIE</div>
         </div>
         <!-- Flèche droite -->
         <button class="slider-arrow1__destinations right__destinations">&#10095;</button>
@@ -70,337 +79,99 @@
 
 <!-- Nos voyages incontournables -->
 <section class="incontournables-section__destinations">
-  <h2>Nos voyages incontournables</h2>
+    <h2>Nos voyages incontournables</h2>
 
-  <div class="slider-container__destinations">
-    <!-- Flèche gauche -->
-    <button class="slider-arrow__destinations left__destinations">&#10094;</button>
+    <div class="slider-container__destinations">
+        <!-- Flèche gauche -->
+        <button class="slider-arrow__destinations left__destinations">&#10094;</button>
 
-    <!-- CONTENEUR SCROLLABLE -->
-    <div class="cards__destinations">
-      <!-- Carte 1 -->
-      <div class="card__destinations" 
-           data-modal-img="../assets/images/océanie.webp"
-           data-modal-description="Délices d'Asie & Océanie : découvrez les saveurs uniques de ces régions.">
-        <img src="../assets/images/asie.avif" alt="Délices d'Asie & Océanie">
-        <div class="card-content__destinations">
-          <h3 class="card-title__destinations">Délices d'Asie & Océanie</h3>
-          <p>Durée : 15-18 jours</p>
-          <p>Tarif indicatif : 6 000 - 8 000 €</p>
-          <p>Pays inclus : Thaïlande - Australie - Nouvelle-Zélande - Japon</p>
+        <!-- Slider -->
+        <div class="cards__destinations">
+            <!-- Carte 1 -->
+            <div class="card__destinations">
+                <img src="assets/images/jap_1.webp" alt="Délices d'Asie & Océanie">
+                <div class="card-content__destinations">
+                    <h3>Délices d'Asie & Océanie</h3>
+                    <p>Durée : 15-18 jours</p>
+                    <p>Tarif indicatif : 6 000 - 8 000 €</p>
+                    <p>Pays inclus : Thaïlande - Nouvelle-Zélande - Australie - Japon</p>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="card__destinations">
+                <img src="image-asie-oceanie-2.jpg" alt="Délices d'Asie & Océanie">
+                <div class="card-content__destinations">
+                    <h3>Délices d'Asie & Océanie</h3>
+                    <p>Durée : 15-18 jours</p>
+                    <p>Tarif indicatif : 6 000 - 8 000 €</p>
+                    <p>Pays inclus : Thaïlande - Nouvelle-Zélande - Australie - Japon</p>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="card__destinations">
+                <img src="image-asie-oceanie-3.jpg" alt="Délices d'Asie & Océanie">
+                <div class="card-content__destinations">
+                    <h3>Délices d'Asie & Océanie</h3>
+                    <p>Durée : 15-18 jours</p>
+                    <p>Tarif indicatif : 6 000 - 8 000 €</p>
+                    <p>Pays inclus : Thaïlande - Nouvelle-Zélande - Australie - Japon</p>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="card__destinations">
+                <img src="image-tour-du-monde.jpg" alt="Tour du monde">
+                <div class="card-content__destinations">
+                    <h3>Tour du monde</h3>
+                    <p>Durée : 60–75 jours (5–7 jours par pays)</p>
+                    <p>Tarif indicatif : 15 000–20 000 €</p>
+                    <p>Pays inclus : France - États-Unis - Pérou - Maroc - Afrique du Sud - Thaïlande - Nouvelle-Zélande - Australie - Japon - Italie</p>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <!-- Carte 2 -->
-      <div class="card__destinations" 
-           data-modal-img="../assets/images/méditerranée.webp" 
-           data-modal-description="Méditerranée & Afrique Gourmandes : un voyage au cœur des saveurs méditerranéennes.">
-        <img src="../assets/images/afrique.avif" alt="Méditerranée & Afrique Gourmandes ">
-        <div class="card-content__destinations">
-          <h3 class="card-title__destinations">Méditerranée & Afrique Gourmandes </h3>
-          <p>Durée : 12 jours</p>
-          <p>Tarif indicatif : 4 000–6 000 €</p>
-          <p>Pays inclus :  Maroc - Afrique du Sud - Italie - France</p>
-        </div>
-      </div>
-
-      <!-- Carte 3 -->
-      <div class="card__destinations" 
-           data-modal-img="../assets/images/atlantique.webp" 
-           data-modal-description=">Saveurs de l’Atlantique : un périple culinaire entre France, États-Unis et Pérou.">
-        <img src="../assets/images/atlantique2.avif" alt="Saveurs de l’Atlantique">
-        <div class="card-content__destinations">
-          <h3 class="card-title__destinations">Saveurs de l’Atlantique</h3>
-          <p>Durée : ≈ 14 jours</p>
-          <p>Tarif indicatif : 3 000–5 000 €</p>
-          <p>Pays inclus :  France - États-Unis - Pérou - France</p>
-        </div>
-      </div>
-
-      <!-- Carte 4 -->
-      <div class="card__destinations" 
-           data-modal-img="../assets/images/tour.webp" 
-           data-modal-description="Tour du monde complet : 10 pays, 60 à 75 jours d'aventures et de gastronomie.">
-        <img src="../assets/images/monde.avif" alt="Tour du monde">
-        <div class="card-content__destinations">
-          <h3 class="card-title__destinations">Tour du monde</h3>
-          <p>Durée : 60–75 jours (5–7 jours par pays)</p>
-          <p>Tarif indicatif : 15 000–20 000 €</p>
-          <p>Pays inclus : France - États-Unis - Pérou - Maroc - Afrique du Sud - Thaïlande - Nouvelle-Zélande - Australie - Japon - Italie</p>
-        </div>
-      </div>
+        <!-- Flèche droite -->
+        <button class="slider-arrow__destinations right__destinations">&#10095;</button>
     </div>
-
-    <!-- Flèche droite -->
-    <button class="slider-arrow__destinations right__destinations">&#10095;</button>
-  </div>
 </section>
-
 <!-- Nos voyages incontournables -->
+<!-- Carte interactive -->
 
-<!-- SECTION CARTE INTERACTIVE -->
-  <section class="carte__destinations">
-    <h2 class="carte__titre__destinations">Votre Itinéraire</h2>
-    <div class="carte__conteneur__destinations">
-      <svg class="carte__svg__destinations" id="map" viewBox="0 0 1000 500"></svg>
-    </div>
-  </section>
-  
-<!-- SECTION CARTE INTERACTIVE --> 
+<!-- Carte interactive --> 
 
-<!-- Section description -->
-<!-- France -->
-<section class="country-section" id="France" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/paris.avif" alt="France">
+<!-- Section Japon -->
+<section class="japon-section__destinations">
+    <div class="japon-container__destinations">
+        <div class="japon-image__destinations">
+            <img src="assets/images/jap_1.webp" alt="Marché japonais">
+        </div>
+
+        <div class="japon-content__destinations">
+            <h2> Japon – <span>Entre traditions et modernité culinaire</span></h2>
+            <p>
+                Le Japon est une étape incontournable pour tout voyageur gourmet. Ici, la gastronomie est un véritable art de vivre, alliant raffinement, saisonnalité et précision.
+            </p>
+
+            <h3>Au programme :</h3>
+            <ul>
+                <li><b>Tokyo :</b> immersion dans l’univers des sushis au cœur du plus grand marché aux poissons du monde, découverte de l’izakaya (petits bistrots traditionnels).</li>
+                <li><b>Osaka :</b> capitale du street food japonais, dégustez les fameux takoyaki (boulettes de poulpe) et okonomiyaki (crêpes grillées).</li>
+                <li><b>Kyoto :</b> plongez dans la tradition avec une cérémonie du thé et savourez la cuisine kaiseki, un menu gastronomique d’exception.</li>
+                <li><b>Atelier culinaire :</b> participez à un cours de ramen ou de gyoza avec un chef local.</li>
+            </ul>
+
+            <div class="japon-highlight__destinations">
+                🍣 Le Japon séduit autant par la finesse de ses plats que par la richesse de sa culture. Une étape où chaque repas est une découverte sensorielle.
+            </div>
+        </div>
     </div>
-    <div class="destination-content">
-      <h2>France – <span>Entre terroir et haute gastronomie</span></h2>
-<p>
-La France est le paradis des gourmets. De la finesse des mets étoilés aux produits du terroir, chaque région offre une expérience unique.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Paris :</b> pâtisseries, bistrots et haute cuisine.</li>
-  <li><b>Lyon :</b> bouchons et spécialités régionales.</li>
-  <li><b>Bordeaux :</b> dégustation de vins et produits du vignoble.</li>
-  <li><b>Atelier culinaire :</b> cours de macarons ou de sauces classiques avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🥖 La France charme par l’élégance de sa gastronomie et la richesse de ses traditions culinaires.
-</div>
-  </div>
 </section>
-
-<!-- Italy -->
-<section class="country-section" id="Italy" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/italie.avif" alt="Italie">
-    </div>
-    <div class="destination-content">
-      <h2>Italy – <span>Saveurs méditerranéennes et traditions ancestrales</span></h2>
-<p>
-L’Italie est un hymne aux saveurs simples et authentiques, où chaque plat raconte l’histoire d’une région.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Rome :</b> pasta, pizza et gelato.</li>
-  <li><b>Florence :</b> cuisine toscane et vins locaux.</li>
-  <li><b>Naples :</b> pizza traditionnelle et street food.</li>
-  <li><b>Atelier culinaire :</b> préparation de pâtes ou de tiramisu avec un chef italien.</li>
-</ul>
-<div class="destination-highlight">
-🍝 L’Italie séduit par sa simplicité raffinée et la chaleur de ses traditions culinaires.
-</div>
-  </div>
-</section>
-
-<!-- Morocco -->
-<section class="country-section" id="Morocco" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/maroc.avif" alt="Maroc">
-    </div>
-    <div class="destination-content">
-      <h2>Moroc – <span>Épices et traditions du Maghreb</span></h2>
-<p>
-Le Maroc est un festival de saveurs, entre épices, marchés colorés et recettes transmises de génération en génération.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Marrakech :</b> tajines et couscous dans les souks.</li>
-  <li><b>Fès :</b> pâtisseries orientales et thés à la menthe.</li>
-  <li><b>Essaouira :</b> fruits de mer et street food côtière.</li>
-  <li><b>Atelier culinaire :</b> cours de pâtisseries marocaines ou de tajine avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🕌 Le Maroc envoûte par ses arômes intenses et l’hospitalité de sa culture.
-</div>
-  </div>
-</section>
-
-<!-- South Africa -->
-<section class="country-section" id="South Africa" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/afrique.avif" alt="Afrique du Sud">
-    </div>
-    <div class="destination-content">
-      <h2>South Africa – <span>Du braai aux saveurs locales</span></h2>
-<p>
-L’Afrique du Sud offre une cuisine variée, mêlant influences africaines, européennes et asiatiques, dans un cadre naturel époustouflant.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Cape Town :</b> fruits de mer frais et vins de la région.</li>
-  <li><b>Johannesburg :</b> street food et plats traditionnels zoulous.</li>
-  <li><b>Stellenbosch :</b> dégustation de vins et cuisine du terroir.</li>
-  <li><b>Atelier culinaire :</b> préparation de bobotie ou de braai avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🥩 L’Afrique du Sud séduit par sa diversité culinaire et ses paysages à couper le souffle.
-</div>
-  </div>
-</section>
-
-<!-- United States of America -->
-<section class="country-section" id="United States of America" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/usa.avif" alt="États-Unis">
-    </div>
-    <div class="destination-content">
-      <h2>United States of America – <span>Entre street food et gastronomie innovante</span></h2>
-<p>
-Les États-Unis surprennent par leur variété culinaire, des classiques américains aux créations gastronomiques les plus innovantes.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>New York :</b> bagels, hot-dogs et restaurants étoilés.</li>
-  <li><b>New Orleans :</b> cuisine cajun et créole.</li>
-  <li><b>California :</b> gastronomie fusion et produits locaux.</li>
-  <li><b>Atelier culinaire :</b> cours de burgers gourmets ou de cupcakes avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🍔 Les USA séduisent par la créativité de leur cuisine et la richesse de leurs influences culturelles.
-</div>
-  </div>
-</section>
-
-<!-- Peru -->
-<section class="country-section" id="Peru" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/perou.avif" alt="Pérou">
-    </div>
-    <div class="destination-content">
-      <h2>Peru – <span>Saveurs andines et traditions culinaires</span></h2>
-<p>
-Le Pérou est une terre de gastronomie riche, entre produits locaux, superaliments et recettes ancestrales.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Lima :</b> ceviche et cuisine fusion péruvienne.</li>
-  <li><b>Cusco :</b> plats andins et spécialités locales.</li>
-  <li><b>Arequipa :</b> picanterías traditionnelles et produits du terroir.</li>
-  <li><b>Atelier culinaire :</b> cours de ceviche ou de quinoa avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🥑 Le Pérou charme par la richesse de ses saveurs et la créativité de ses chefs.
-</div>
-  </div>
-</section>
-
-<!-- Japan (affichée par défaut) -->
-<section class="country-section" id="Japan">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/jap.jpg" alt="Japan">
-    </div>
-    <div class="destination-content">
-      <h2>Japon – <span>Entre traditions et modernité culinaire</span></h2>
-      <p>
-        Le Japon est une étape incontournable pour tout voyageur gourmet. 
-        Ici, la gastronomie est un véritable art de vivre, alliant raffinement,
-        saisonnalité et précision.
-      </p>
-      <h3>Au programme :</h3>
-      <ul>
-        <li><b>Tokyo :</b> immersion dans l’univers des sushis et izakayas.</li>
-        <li><b>Osaka :</b> street food et spécialités locales.</li>
-        <li><b>Kyoto :</b> cérémonie du thé et cuisine kaiseki.</li>
-        <li><b>Atelier culinaire :</b> cours de ramen ou gyoza avec un chef local.</li>
-      </ul>
-      <div class="destination-highlight">
-        🍣 Le Japon séduit autant par la finesse de ses plats que par la richesse de sa culture.
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Australia -->
-<section class="country-section" id="Australia" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/australie.avif" alt="Australie">
-    </div>
-    <div class="destination-content">
-      <h2>Australia – <span>Du bush tucker aux saveurs côtières</span></h2>
-<p>
-L’Australie offre une cuisine qui mêle traditions aborigènes et influences internationales, au cœur de paysages incroyables.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Sydney :</b> fruits de mer et cuisine moderne.</li>
-  <li><b>Melbourne :</b> coffee culture et gastronomie fusion.</li>
-  <li><b>Queensland :</b> spécialités tropicales et produits locaux.</li>
-  <li><b>Atelier culinaire :</b> cours de barbecue australien ou de plats à base de produits locaux.</li>
-</ul>
-<div class="destination-highlight">
-🐨 L’Australie séduit par sa créativité culinaire et ses paysages uniques.
-</div>
-  </div>
-</section>
-
-<!-- New Zealand -->
-<section class="country-section" id="New Zealand" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/newzeland.avif" alt="Nouvelle-Zélande">
-    </div>
-    <div class="destination-content">
-      <h2>New Zealand – <span>Entre mer et terres fertiles</span></h2>
-<p>
-La Nouvelle-Zélande est un paradis pour les gourmets, avec des produits locaux d’exception et une cuisine inventive.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Auckland :</b> fruits de mer et cuisine contemporaine.</li>
-  <li><b>Wellington :</b> café, street food et restaurants innovants.</li>
-  <li><b>Queenstown :</b> produits de montagne et vins locaux.</li>
-  <li><b>Atelier culinaire :</b> préparation de poisson frais ou de plats à base d’agneau avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🥝 La Nouvelle-Zélande séduit par ses produits d’exception et la créativité de ses chefs.
-</div>
-  </div>
-</section>
-
-<!-- Thailand -->
-<section class="country-section" id="Thailand" style="display:none;">
-  <div class="destination-container">
-    <div class="destination-image">
-      <img src="../assets/images/thailand.avif" alt="Thaïlande">
-    </div>
-    <div class="destination-content">
-      <h2>Thailand – <span>Épices, marchés et saveurs exotiques</span></h2>
-<p>
-La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et marchés animés.
-</p>
-<h3>Au programme :</h3>
-<ul>
-  <li><b>Bangkok :</b> street food et plats emblématiques comme le pad thaï.</li>
-  <li><b>Chiang Mai :</b> cuisine du Nord et spécialités locales.</li>
-  <li><b>Phuket :</b> fruits de mer et recettes balnéaires.</li>
-  <li><b>Atelier culinaire :</b> cours de curry thaï ou de desserts exotiques avec un chef local.</li>
-</ul>
-<div class="destination-highlight">
-🌶 La Thaïlande séduit par la richesse de ses saveurs et la convivialité de sa cuisine.
-</div>
-  </div>
-</section>
-
-<!-- Section description -->
-
-<!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
-  <script src="../assets/js/script.js"></script>
+<!-- Description -->
 
 <!-- Footer Axel -->
-  <footer>
+ <footer>
   <div class="footer-nav">
     <!-- Liens -->
     <div class="footer-links">
@@ -416,14 +187,6 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
       <input type="text" placeholder="search...">
       <button>🔍</button>
     </div>
-
-    <!-- Réseaux sociaux -->
-    <div class="footer-socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fas fa-paper-plane"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
   </div>
 
   <div class="footer-bottom">
@@ -432,20 +195,20 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
 </footer>
 <!-- Footer Axel -->
 
+ <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  </script>
 
 
-<!-- Modal pour afficher les détails -->
-<div id="modalDestination" class="modal__destinations">
-    <div class="modal-content__destinations">
-        <span class="close__destinations">&times;</span>
-        <h3 id="modalTitle">Titre de la destination</h3>
-        <p id="modalDuration">Durée : </p>
-        <p id="modalPrice">Tarif : </p>
-        <p id="modalCountries">Pays inclus : </p>
-        <img id="modalImage" src="" alt="Image destination" style="width:100%; margin-top:10px;">
-        <p id="modalDescription">Description détaillée...</p>
-    </div>
-</div>
-<!-- Modal pour afficher les détails -->
     </body>
 </html>
