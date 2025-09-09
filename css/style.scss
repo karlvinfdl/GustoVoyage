@@ -11,7 +11,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: sans-serif;
+    
 }
 
 /* ===================================================================================
@@ -56,9 +56,9 @@ nav a {
 
 
 
-/*===================================
-            Footer
-===================================== */
+/*=====================================================================
+    FOOTER     FOOTER      FOOOTER     FOOTER     FOOTER     FOOTER
+======================================================================= */
 
 footer {
   background: linear-gradient(to right, #f1c40f, #d35400);
@@ -117,16 +117,17 @@ footer {
 
 
 /* =======================================================================================
-TITRE ATELIERS CUISINE
+   TITRE ATELIERS CUISINE
 =========================================================================================*/
 
 section h1 {
-    margin-top: auto;
-    text-align: center;
-   font-family: "Playfair Display", serif;
+  margin-top: 45px;
+  text-align: center;
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+  
 }
 
 
@@ -134,9 +135,19 @@ span {
     border-radius: 100px;
     background-color: #FFC529;
     padding: 11px;
-    
+      font-size: 0.9em;
+
+
 }
  
+.annonce {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+
+}
 
 
 
@@ -152,7 +163,10 @@ span {
     place-items: center;
     background-color: #fffbef;
     margin: 20px 0;
+    font-size: large;
 }
+
+
 
 .review_list {
     display: flex;
@@ -186,9 +200,9 @@ span {
 }
 
 .review_img img {
- width: 115%;
-margin: auto;
- border-radius: 10px;
+    width: 115%;
+    margin: auto;
+    border-radius: 10px;
 }
 
 .review_item h2 {
@@ -256,6 +270,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
     margin-bottom: 30px;
     padding-right: 100px;
     gap: 150px;
+    margin-top: 100px;
 }
 
 .options label {
@@ -364,7 +379,6 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 
@@ -703,3 +717,126 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 }
 
 
+
+
+/* ===================================
+   Responsive TABLETTE (768px) Page 1
+======================================= */
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 0 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-right: 0;
+    margin-top: 50px;
+  }
+
+  .review_list {
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  .container4 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-slider {
+    gap: 2em;
+  }
+}
+
+
+/* ============================
+   Responsive MOBILE (max 768px)
+=============================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .btn-contact {
+    margin-top: 10px;
+  }
+
+  section h1 {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 10px;
+    margin-top: 40px;
+  }
+
+  .review_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .review_item {
+    width: 90%;
+  }
+
+  .container4 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .slider-container {
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 80%;
+    margin: 0 auto 50px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-search {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
