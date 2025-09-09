@@ -1,0 +1,26 @@
+{
+  "name": "gustovoyage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axelpm4/GustoVoyage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axelpm4/GustoVoyage/issues"
+  },
+  "homepage": "https://github.com/axelpm4/GustoVoyage#readme",
+  "devDependencies": {
+    "sass": "^1.92.1",
+    "vite": "^7.1.5"
+  }
+}
