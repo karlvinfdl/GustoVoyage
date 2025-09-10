@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GustoVoyage</title>
-    <link rel="stylesheet" href="../css/style.scss">
+    <link rel="stylesheet" href="../assets/css/style.scss">
+
+   
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     
+    
     <!-- ============================= Favicon ========================= -->
-    <link rel="icon" type="images/jpg" href="../images/logoarrondi.jpg">
+    <link rel="icon" type="images/jpg" href="../assets/images/logoarrondi.webp">
     
     <!--====================== Police Playfair Display ===================-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +27,39 @@
 
 <body>
 
-<!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="../images/logoarrondi.jpg" alt="Logo GustoVoyage">
-    </div>
-    <nav>
-      <a href="#">Accueil</a>
-      <a href="#">Destination</a>
-      <a href="#">Offres spéciales</a>
-      <a href="#">Ateliers cuisine</a>
-      <a href="#">Galerie photo</a>
-    </nav>
-    <a href="#" class="btn-contact">Contact</a>
-  <div class="burger">
-      ☰
-    </div>
-  </header>
+  <!-- Header -->
+<header>
+  <div class="logo">
+    <img src="/assets/img/logoarrondi.webp" alt="GustoVoyage">
+  </div>
+
+  <!-- menu desktop -->
+  <nav class="nav-desktop">
+    <a href="#">Accueil</a>
+    <a href="/pages/destinations.html">Destination</a>
+    <a href="/pages/offresspeciale.html">Offres spéciales</a>
+    <a href="#">Ateliers cuisine</a>
+    <a href="/pages/galerie.html">Galerie photo</a>
+
+  </nav>
+
+  <!-- bouton contact desktop -->
+  <a href="/pages/contact.html" class="btn-contact">Contact</a>
+
+  <!-- menu burger (mobile) -->
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <!-- menu overlay (mobile) -->
+  <nav id="nav-menu">
+    <div class="close-btn" id="close-btn">✖</div>
+    <a href="#">Accueil</a>
+    <a href="/">Destination</a>
+    <a href="/pages/offresspeciale.html">Offres spéciales</a>
+    <a href="/pages/">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
+    <a href="/pages/contact.html">Contact</a>
+  </nav>
+</header>
     
   
   <!-- ============================================== Titre Page=============================================================== -->
@@ -57,7 +77,7 @@
            à travers les diverses traditions du monde, présenté par nos différents chefs de renom</p>
 <ul class="review_list">
     <li class="review_item">
-    <div class="review_img"><img src="../images/Etchebest.webp" alt="" ></div>
+    <div class="review_img"><img src="../assets/images/Etchebest.webp" alt="" ></div>
   <h2>Philippe Etchebest</h2>
   <span01 class="span01">
     <p>4.0 ⭐ ⭐ ⭐ ⭐ ☆</p>
@@ -69,7 +89,7 @@
 
 
 <li class="review_item">
-    <div class="review_img"><img src="../images/Gordon.jpg" alt="" ></div>
+    <div class="review_img"><img src="../assets/images/Gordon.jpg" alt="" ></div>
   <h2>Gordon Ramsay</h2>
   <span01 class="span01">
     <p>4.2 ⭐ ⭐ ⭐ ⭐ ☆</p>
@@ -81,7 +101,7 @@
 
 
 <li class="review_item">
-    <div class="review_img"><img src="../images/Soma.webp" alt="" ></div>
+    <div class="review_img"><img src="../assets/images/Soma.webp" alt="" ></div>
   <h2>Soma Yukihira</h2>
   <span01 class="span01">
     <p>5.0 ⭐ ⭐ ⭐ ⭐ ⭐ </p>
@@ -159,39 +179,39 @@
 <div class="slider-container">
   <div class="product-slider">
     <div class="product-card">
-      <a href="atelierscuisine2.html"><img src="../images/Viennoseries.png" alt="Produit 1"></a>
+      <a href="../pages/atelierscuisine2.html"><img src="../assets/images/Viennoseries.png" alt="Produit 1"></a>
       <h4>Découverte Gastronomie Française</h4>
       <div class="product_info">
         <span4>$799.99</span4>
-       <img src="../images/Etchebest.webp" alt="Chef" class="chef-icon">
+       <img src="../assets/images/Etchebest.webp" alt="Chef" class="chef-icon">
       </div>
     </div>
 
     <div class="product-card">
-     <a href="atelierscuisine3.html"><img src="../images/Sus.png" alt="Produit 2"></a> 
+     <a href="../pages/atelierscuisine3.html"><img src="../assets/images/Sus.png" alt="Produit 2"></a> 
       <h4>Ronde de Sushis</h4>
       <div class="product_info">
         <span4>$245.99</span4>
-       <img src="../images/Soma.webp" alt="Chef" class="chef-icon">
+       <img src="../assets/images/Soma.webp" alt="Chef" class="chef-icon">
       </div>
     </div>
 
     <div class="product-card">
-     <a href="atelierscuisine4.html"><img src="../images/Atelier2.jpg" alt="Produit 3"></a>
+     <a href="../pages/atelierscuisine4.html"><img src="../assets/images/Atelier2.jpg" alt="Produit 3"></a>
       <h4>Cours de Cuisine</h4>
       <div class="product_info">
         <span4>$85.99</span4>
-        <img src="../images/Soma.webp" alt="Chef" class="chef-icon">
+        <img src="../assets/images/Soma.webp" alt="Chef" class="chef-icon">
       </div>
     </div>
 
 
     <div class="product-card">
-     <a href="atelierscuisine5.html"><img src="../images/Hamburger.jpg" alt="Produit 4"></a>
+     <a href="../pages/atelierscuisine5.html"><img src="../assets/images/Hamburger.jpg" alt="Produit 4"></a>
       <h4>Space Burger</h4>
       <div class="product_info">
         <span4>$9999</span4>
-        <img src="../images/Gordon.jpg" alt="Chef" class="chef-icon">
+        <img src="../assets/images/Gordon.jpg" alt="Chef" class="chef-icon">
       </div>
     </div>
 
@@ -208,10 +228,10 @@
   <div class="footer-nav">
     <!-- Liens -->
     <div class="footer-links">
-      <a href="#">Accueil</a>
-      <a href="#">Destination</a>
-      <a href="#">Offres spéciales</a>
-      <a href="#">Ateliers cuisine</a>
+      <a href="../index.html">Accueil</a>
+      <a href="destinations.html">Destination</a>
+      <a href="offresspeciale.html">Offres spéciales</a>
+      <a href="atelierscuisine.html">Ateliers cuisine</a>
       <a href="#">Galerie photo</a>
     </div>
 
@@ -235,6 +255,19 @@
   </div>
 </footer>
 
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  </script>
 
 </body>
 </html>

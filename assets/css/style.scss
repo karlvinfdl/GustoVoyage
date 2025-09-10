@@ -873,6 +873,431 @@ footer {
     }
   }
 }
+
+
+
+
+/*================================================================================
+  PAGES ATELIERS CUISINE {ACCEUIL} 
+==================================================================================*/ 
+
+.playfair-display-stylesheet {
+  font-family: 'Playfair Display' , serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* =======================================================================================
+   TITRE ATELIERS CUISINE
+=========================================================================================*/
+
+section h1 {
+  margin-top: 45px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  
+}
+
+
+span {
+    border-radius: 100px;
+    background-color: #FFC529;
+    padding: 11px;
+      font-size: 0.9em;
+
+
+}
+ 
+.annonce {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+
+}
+
+
+
+/* ================================================================================================
+ CARTES DES CHEFS    CARTES DES CHEFS   CARTES DES CHEFS    CARTES DES CHEFS    CARTES DES CHEFS
+====================================================================================================*/
+
+
+.container4 {
+    width: 100vw;
+    height: 110vh;
+    display: grid;
+    place-items: center;
+    background-color: #fffbef;
+    margin: 20px 0;
+    font-size: large;
+}
+
+
+
+.review_list {
+    display: flex;
+    list-style: none;
+    gap: 150px;
+}
+
+.review_item:hover {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.review_item {
+    width: 300px;
+    margin: 0% 1rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background: white;
+    box-shadow: inset 2px 2px 1px white, 4px 4px 4px rgba(0, 0, 0, 0.267);
+}
+
+.review_img {
+    height: 44px;
+    width: 44px;
+    float: left;
+    border-radius: 6px;
+    margin-right: 1rem;
+    margin-bottom: .4rem;
+    box-shadow: inset 4px 4px 4px rgba(255, 37, 37, 0.89);
+    overflow: hidden;
+}
+
+.review_img img {
+    width: 115%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.review_item h2 {
+    line-height: 100%;
+    margin-top: 4px;
+    color: black;
+    font-size: 16px;
+}
+
+
+.review_item span>p {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.review_item span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+/* à rajouter */
+.review_item span .star {
+    align-self: flex-end;
+    font-style: normal;
+    height: 16px;
+    width: 16px;
+    clip-path: polygon(40% 40%, 50% 10%, 60% 40%, 90% 40%, 65% 60%, 70% 90%, 50% 70%, 25% 90%, 35% 60%, 10% 40%);
+    background-color: rgba(54, 54, 54);
+}
+
+.review_item span .star::before {
+    content: "";
+    height: 100%;
+    width: 92%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: #FFC529;
+}
+
+
+.review_item span.span3 .star::before {
+    width: 90%;
+}
+
+
+
+.review_item p {
+    color: rgba(99,99, 99);
+    padding-top: 10px;
+    font-size: 12px;
+
+}
+
+
+/*=================================================================================================
+Ceci sont les boutons de selections et le menu déroulant des 3 boutons respectifs
+===================================================================================================*/
+
+
+.options {
+    display: flex;
+    margin-bottom: 30px;
+    padding-right: 100px;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.options select {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+/* ===========================================================================================================
+    CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES   CARTES DES DIFFERENTES ACTIVITES
+   ===========================================================================================================*/
+  .slider-container {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.product-slider {
+  display: flex;
+  gap: 4em;
+}
+
+.product-card {
+  scroll-snap-align: start;
+  flex: 0 0 auto; /* empêche la carte de s'étirer */
+  width: 200px;   /* ajuste selon ton design */
+  background-color: rgb(252, 253, 254);
+  padding: 1em;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 100px;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.product-card h4 {
+  font-size: 1.3em;
+  margin: 0.5em 0;
+}
+
+.product-card div {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.chef-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.chef-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.product-card:hover {
+  background-color:#808083;
+  color: white;
+  transform: scale(1.1);
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ======================================================================================================================
+    SQUELETTTE POUR LA PAGE PRODUITS PRESENTANT LES DIFFERENTES ACTIVITES 
+  =========================================================================================================================*/
+
+  * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.container_product {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 40px;
+  background-color: #fff8e7;
+}
+
+
+/* =================================================
+  SECTION GAUCHE DE LA PAGE
+===================================================*/
+
+.left-section img {
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.5s ease;
+}
+
+.left-section img:hover {
+    transform: scale(1.1);
+}
+
+
+
+.info-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-box p {
+  margin-bottom: 1px;
+  line-height: 40px;
+  text-align: justify;
+
+}
+
+.info-text {
+  flex: 1;
+}
+
+
+.chef-img {
+ max-width: 41px;
+  top: 15px;
+  margin-left: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+
+.flag {
+  font-size: 1.2em;
+}
+
+/* ==================================================
+    SECTION DROITE DE LA PAGE 
+=====================================================*/
+
+.right-section {
+  max-width: 600px;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.right-section h2 {
+  background-color: #FFC529;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.right-section p {
+  margin-bottom: 10px;
+  line-height: 2.5;
+}
+
+.right-section ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.right-section ul li {
+  margin-bottom: 8px;
+  list-style: disc;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #000000;
+}
+
+.note {
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+/* ===================================================
+ LOCALISATION / ENREGISTREMENT / NOTIFICATIONS
+========================================================*/
+
+.event-details {
+  background-color: #FFC529;
+  border: 1px solid #e2c97b;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+}
+
+.event-btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.event-btn {
+  background-color: #FFC529;
+  color: rgb(4, 4, 4);
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 0;
+  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.event-btn:hover {
+  background-color: #383D59;
+}
+
+
 /* ---------------- RESPONSIVE ---------------- */
 
 /* Tablette */
@@ -1322,5 +1747,285 @@ footer {
 
   .card-contact {
     padding: 20px;
+  }
+}
+
+/* ========================================================================
+   Responsive Ateliers Cuisine : Tablettes (entre 768px et 1024px)
+========================================================================= */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 30px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+    padding: 15px 0;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 20px;
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .review_list {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .container4 {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container_product {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .left-section img {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .chef-img {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .right-section {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .product-slider {
+    gap: 2em;
+  }
+
+  .product-card {
+    width: 180px;
+  }
+}
+
+
+/* ==========================================================================
+   Responsive : Mobiles (max-width: 768px)
+========================================================================== */
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    z-index: 10;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  section h1 {
+    font-size: 24px;
+    margin: 20px;
+  }
+
+  .review_list {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .review_item {
+    width: 90%;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+    margin-top: 40px;
+  }
+
+  .slider-container {
+    padding: 10px;
+  }
+
+  .product-card {
+    width: 140px;
+    font-size: 0.85em;
+  }
+
+  .product-slider {
+    gap: 1em;
+  }
+
+  .container_product {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-section img {
+    width: 100%;
+  }
+
+  .right-section {
+    padding: 10px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-search {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .footer-search input {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+
+  .event-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .event-btn {
+    font-size: 0.8em;
+    padding: 8px 10px;
+  }
+}
+
+
+/* ==========================================================================
+   Responsive : Petits Mobiles (max-width: 480px)
+========================================================================== */
+@media screen and (max-width: 480px) {
+
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .product-card {
+    width: 120px;
+    font-size: 0.75em;
+  }
+
+  .right-section h2 {
+    font-size: 1em;
+  }
+
+  .right-section p,
+  .right-section ul {
+    font-size: 0.9em;
+  }
+
+  .footer-search input {
+    width: 100%;
+    font-size: 0.8em;
+    padding: 6px;
+  }
+
+  .footer-search button {
+    padding: 5px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+
+  .event-btn {
+    padding: 6px;
+    font-size: 0.75em;
+  }
+
+  .info-box p {
+    font-size: 0.9em;
+    line-height: 28px;
   }
 }
