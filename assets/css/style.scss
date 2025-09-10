@@ -668,6 +668,7 @@ nav a {
   margin: 40px 0 20px;
   font-size: 2rem;
   color: #444;
+  font-family: 'playfair display', serif;
 }
 
 .offers {
@@ -915,7 +916,7 @@ span {
 .annonce {
   margin-top: 15px;
   font-weight: bold;
-  color: #000000;
+  
   text-align: center;
   font-family: Helvetica, sans-serif;
 
@@ -1129,8 +1130,8 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
 
 
 .product-card:hover {
-  background-color:#808083;
-  color: white;
+  background-color:#eaeeff;
+  color: black;
   transform: scale(1.1);
 }
 
@@ -1185,6 +1186,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   border-radius: 8px;
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 500px;
 }
 
 .info-box p {
@@ -1945,7 +1947,7 @@ Ceci sont les boutons de selections et le menu déroulant des 3 boutons respecti
   }
 
   .footer-search {
-    flex-direction: column;
+    
     align-items: stretch;
     width: 100%;
     gap: 10px;
