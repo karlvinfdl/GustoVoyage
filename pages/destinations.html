@@ -5,34 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GustoVoyage</title>
     <link rel="stylesheet" href="../assets/css/style.scss">
+    <link rel="stylesheet" href="../assets/css/destinations.scss">
     <script src="https://unpkg.com/topojson@3"></script>
-    <link rel="shortcut icon" href="../assets/images/logoarrondi.webp">
+    <link rel="shortcut icon" href="../assets/img/logoarrondi.webp">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
+<body class="body__destinations">
 <!-- Header Axel -->
-     <header>
-        <div class="logo">
+    <header>
+  <div class="logo">
+    <img src="/assets/img/logoarrondi.webp" alt="GustoVoyage">
+  </div>
 
-            <img src="../assets/images/logoarrondi.webp" alt="Logo GustoVoyage"> 
+  <!-- menu desktop -->
+  <nav class="nav-desktop">
+    <a href="../index.html">Accueil</a>
+    <a href="#">Destination</a>
+    <a href="../pages/offresspeciale.html">Offres spéciales</a>
+    <a href="../pages/atelierscuisine.html">Ateliers cuisine</a>
+    <a href="#">Galerie photo</a>
 
-        </div>
-        <nav>
-            <a href="#">Accueil</a>
-            <a href="#">Destination</a>
-            <a href="#">Offre spéciales</a>
-            <a href="#">Ateliers cuisines</a>
-            <a href="#">Galerie photo</a>
-        </nav>
-        <a href="#" class="btn-contact">Contact</a>
+  </nav>
 
-        <div class="burger" id="burger">
-      ☰
-    </div>
-     </header>
+  <!-- bouton contact desktop -->
+  <a href="#" class="btn-contact">Contact</a>
 
-    
+  <!-- menu burger (mobile) -->
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <!-- menu overlay (mobile) -->
+  <nav id="nav-menu">
+    <div class="close-btn" id="close-btn">✖</div>
+    <a href="../index.html">Accueil</a>
+    <a href="">Destination</a>
+    <a href="../pages/offresspeciale.html">Offres spéciales</a>
+    <a href="../pages/atelierscuisine.html">Ateliers cuisine</a>
+    <a href="">Galerie photo</a>
+    <a href="../pages/">Contact</a>
+  </nav>
+</header>
 
 <!-- Header Axel -->
 
@@ -107,7 +119,7 @@
       <!-- Carte 3 -->
       <div class="card__destinations" 
            data-modal-img="../assets/images/atlantique.webp" 
-           data-modal-description=">Saveurs de l’Atlantique : un périple culinaire entre France, États-Unis et Pérou.">
+           data-modal-description="Saveurs de l’Atlantique : un périple culinaire entre France, États-Unis et Pérou.">
         <img src="../assets/images/atlantique2.avif" alt="Saveurs de l’Atlantique">
         <div class="card-content__destinations">
           <h3 class="card-title__destinations">Saveurs de l’Atlantique</h3>
@@ -404,11 +416,11 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
   <div class="footer-nav">
     <!-- Liens -->
     <div class="footer-links">
-      <a href="#">Accueil</a>
-      <a href="#">Destination</a>
-      <a href="#">Offres spéciales</a>
-      <a href="#">Ateliers cuisine</a>
-      <a href="#">Galerie photo</a>
+      <a href="../index.html">Accueil</a>
+      <a href="">Destination</a>
+      <a href="../pages/offresspeciale.html">Offres spéciales</a>
+      <a href="../pages/atelierscuisine.html">Ateliers cuisine</a>
+      <a href="../pages/galeriephoto.html">Galerie photo</a>
     </div>
 
     <!-- Recherche -->
@@ -418,12 +430,7 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
     </div>
 
     <!-- Réseaux sociaux -->
-    <div class="footer-socials">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fas fa-paper-plane"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
+    
   </div>
 
   <div class="footer-bottom">
@@ -432,6 +439,19 @@ La Thaïlande est un voyage sensoriel, entre épices, herbes fraîches et march�
 </footer>
 <!-- Footer Axel -->
 
+<script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    const closeBtn = document.getElementById("close-btn");
+
+    hamburger.addEventListener("click", () => {
+      navMenu.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.classList.remove("show");
+    });
+  </script>
 
 
 <!-- Modal pour afficher les détails -->
