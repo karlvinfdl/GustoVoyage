@@ -5,5 +5,3 @@ node_modules/
 # Ignorer les fichiers de config de dépendances
 package.json
 package-lock.json
-
-
