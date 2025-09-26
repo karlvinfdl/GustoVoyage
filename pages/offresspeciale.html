@@ -3,48 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offres spéciales</title>
-  <link rel="stylesheet" href="../assets/css/offresspeciale.scss">
+  <title>Offres spéciales</title>
   <link rel="shortcut icon" href="/GustoVoyage/assets/logoarrondi-Di11F4ou.webp">
+  <script type="module" crossorigin src="/GustoVoyage/assets/main-mULcJGiW.js"></script>
   <link rel="stylesheet" crossorigin href="/GustoVoyage/assets/style-B719V0Fr.css">
 </head>
 
 <body class="offresspeciales">
+  <!-- Header -->
   <header>
-
-      <div class="logo">
-        <img src="/GustoVoyage/assets/logoarrondi-Di11F4ou.webp" alt="Logo GustoVoyage">
-      </div>
-
-    <nav>
-      <a href="../index.html">Accueil</a>
-      <a href="destinations.html">Destination</a>
-      <a href="offresspeciale.html">Offres spéciales</a>
-      <a href="atelierscuisine.html">Ateliers cuisine</a>
-      <a href="galerie.html">Galerie photo</a>
-    </nav>
-  <!-- bouton contact desktop -->
-  <a href="contact.html" class="btn-contact">Contact</a>
-
-  <!-- menu burger (mobile) -->
-  <div class="hamburger" id="hamburger">☰</div>
-
-  <!-- menu overlay (mobile) -->
-  <nav id="nav-menu">
-    <div class="close-btn" id="close-btn">✖</div>
-    <a href="../index.html">Accueil</a>
-    <a href="destinations.html">Destination</a>
-    <a href="offresspeciale.html">Offres spéciales</a>
-    <a href="atelierscuisine.html">Ateliers cuisine</a>
-    <a href="galerie.html">Galerie photo</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-    
-
-   
+    <div class="logo">
+      <img src="/GustoVoyage/assets/logoarrondi-Di11F4ou.webp" alt="GustoVoyage">
     </div>
 
+    <!-- menu desktop -->
+    <nav class="nav-desktop">
+      <a href="../index.html">Accueil</a>
+      <a href="./destinations.html">Destinations</a>
+      <a href="./offresspeciale.html">Offres spéciales</a>
+      <a href="./atelierscuisine.html">Ateliers cuisine</a>
+      <a href="./galerie.html">Galerie photo</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+
+    <!-- bouton contact -->
+    <a href="./contact.html" class="btn-contact">Contact</a>
+
+    <!-- menu burger -->
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <!-- menu overlay mobile -->
+    <nav id="nav-menu">
+      <div class="close-btn" id="close-btn">✖</div>
+      <a href="../index.html">Accueil</a>
+      <a href="./destinations.html">Destinations</a>
+      <a href="./offresspeciale.html">Offres spéciales</a>
+      <a href="./atelierscuisine.html">Ateliers cuisine</a>
+      <a href="./galerie.html">Galerie photo</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
   </header>
+
+<!-- Header Axel -->
 
   <h2 class="subtitle">Offres Spéciales</h2>
 
@@ -122,10 +122,10 @@
     <!-- Liens -->
     <div class="footer-links">
       <a href="../index.html">Accueil</a>
-      <a href="destinations.html">Destination</a>
-      <a href="offresspeciale.html">Offres spéciales</a>
-      <a href="atelierscuisine.html">Ateliers cuisine</a>
-      <a href="galerie.html">Galerie photo</a>
+      <a href="./destinations.html">Destination</a>
+      <a href="./offresspeciale.html">Offres spéciales</a>
+      <a href="./atelierscuisine.html">Ateliers cuisine</a>
+      <a href="./galerie.html">Galerie photo</a>
     </div>
 
     <!-- Recherche -->
@@ -150,6 +150,6 @@
     closeBtn.addEventListener("click", () => {
       navMenu.classList.remove("show");
     });
-  </script>
+  </script>
 </body>
 </html>
