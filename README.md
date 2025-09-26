@@ -25,3 +25,4 @@ Récupéré le projet du git et faire un git clone dans le terminal : <br>
 `npm run dev` → Démarrer le serveur <em>ctrl + clique gauche pour l'ouvrir,</em> <br>
 Le projet sera disponible généralement sur http://localhost:5173
 
+Lien de mon site publier https://karlvinfdl.github.io/GustoVoyage/
